@@ -2,7 +2,7 @@
 <style lang="scss" src="./Index.scss"></style>
 
 <script>
-import FloatWord from './FloatWord.vue'
+import FloatWord from './FloatWord/FloatWord.vue'
 
 export default {
   components: {
