@@ -1,7 +1,5 @@
-<template>
-    <div id="floatword">
-        <div class="floatword_box" v-for="(content, index) in contents" v-bind:key="content.id"
-            v-bind:style="{bottom: bottoms[index] + 'px', left: lefts[index] + 'px'}" style="position: fixed">
-            {{content}}</div>
-    </div>
-</template>
+<div id="floatword">
+    <div class="floatword_box" v-for="(content, index) in contents" v-bind:key="content.id"
+        v-bind:style="{bottom: bottoms[index] + 'px', left: lefts[index] + 'px'}" style="position: fixed">
+        {{content}}</div>
+</div>

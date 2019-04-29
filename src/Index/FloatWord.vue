@@ -42,7 +42,6 @@ export default {
       for (let i = 0; i < 12; i++) {
         lefts.push(leftspace * (i + 1))
       }
-      console.log(lefts)
       Object.keys(self.lefts).forEach(function (index) {
         let selectindex = Math.floor(Math.random() * (12 - index) + 0)
         if (lefts[selectindex] || lefts[selectindex] === 0) {

@@ -1,6 +1,16 @@
+@import "../components/mediaquery.scss";
+
 .floatword_box {
-    font-size: 36px;
     margin: 0;
     padding: 0;
     opacity: 0.5;
-  }
+    @include pc {
+        font-size: 36px;
+    }
+    @include tablet {
+        font-size: 28px;
+    }
+    @include sp {
+        font-size: 24px;
+    }
+}

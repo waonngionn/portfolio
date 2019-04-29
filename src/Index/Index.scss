@@ -1,19 +1,37 @@
+@import "../components/mediaquery.scss";
+
 #index_box {
     position: relative;
-    width: 50%;
     margin: auto;
-    padding: 50px;
     text-align: center;
-    top: 285px;
     border:solid #ccc 1px;
     background-color: #fff;
     z-index: 1000;
-
+    @include pc {
+        width: 50%;
+        top: 285px;
+        padding: 50px;
+    }
+    @include tablet {
+        top: 285px;
+    }
+    @include sp {
+        width: 80%;
+        top: 285px;
+        padding: 10px;
+    }
     .index_h1{
-        letter-spacing: 30px;
         text-decoration: none;
-        font-size: 98px;
         color: #707070;
+        @include pc {
+            font-size: 98px;
+        }
+        @include tablet {
+            font-size: 49px;
+        }
+        @include sp {
+            font-size: 24px;
+        }
     }
 
     #index_ul{
