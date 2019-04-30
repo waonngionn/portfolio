@@ -64,6 +64,7 @@ body{ height: 100%; }
                     &:hover{
                         background-color: $black;
                         opacity: 0.5;
+                        transform: rotateZ(360deg);
                     }
                     &:hover .about_sns_a{ color: $white; }
                 }

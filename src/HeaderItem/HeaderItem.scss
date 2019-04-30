@@ -29,8 +29,8 @@
             font-size: 24px;
         }
         &:hover{
-            color: #eee;
-            background-color: #666;
+            // background-color: #666;
+            animation: animeHeader 2s linear 0s forwards;
         }
     }
     #header_ul{
@@ -52,5 +52,29 @@
                 }
             }
         }
+    }
+}
+
+@keyframes animeHeader{
+    0%{
+        border-top:solid 1px #666;
+    }
+    25%{
+        border-top:solid 1px #666;
+        border-right:solid 1px #666;
+    }
+    50%{
+        border-top:solid 1px #666;
+        border-right:solid 1px #666;
+        border-bottom:solid 1px #666;
+    }
+    75%{
+        border:solid 1px #666;
+        color: $textcolor;
+        background-color: $white;
+    }
+    100%{
+        color: #eee;
+        background-color: #666;
     }
 }
