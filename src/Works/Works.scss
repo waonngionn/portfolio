@@ -1,0 +1,62 @@
+@import "../components/colorcomponent.scss";
+
+html{
+    height: 100%;
+    overflow: hidden;
+}
+
+#works{
+    .works_hr{
+        z-index: -1;
+        width: 100%;
+        margin-top: 20px;
+        color: $textcolor;
+        animation: rotatehr 10s ease 0s;
+        animation-iteration-count: infinite;
+    }
+    #box_works{
+        position: relative;
+        width: $contentwidth;
+        margin: auto;
+        .box_work{
+            position: relative;
+            float: left;
+            width: $contentwidth/5; height: 500px;
+            margin: 50px;
+            box-shadow: 1px 1px 5px 1px #999;
+            background-color: #fff;
+            #box_work_calunit_img{
+                padding: 15px 30px;
+                background-color: #5C8DF0;
+            }
+            .box_work_description{
+                position: absolute;
+                top: 190px;
+                right: 0;
+                height: 300px;
+                line-height: $contentwidth/15;
+                -webkit-writing-mode: vertical-rl;
+                -ms-writing-mode: tb-rl;
+                    writing-mode: vertical-rl;
+            }
+        }
+    }
+}
+
+@keyframes rotatehr{
+    0%{
+        transform: translate(1000px, 500px) rotateZ(0deg) scaleX(3);
+    }
+    25%{
+        transform: translate(-500px, -20px) rotateZ(360deg) scaleX(3);
+    }
+    50%{
+        transform: translate(-1000px, -500px) rotateZ(720deg) scaleX(3);
+    }
+    75%{
+        transform: translate(-500px, -250px) rotateZ(360deg) scaleX(3);
+    }
+    100%{
+        transform: translate(1000px, 500px) rotateZ(0deg) scaleX(3);
+    }
+}
