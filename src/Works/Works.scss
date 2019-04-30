@@ -1,7 +1,7 @@
 @import "../components/colorcomponent.scss";
 
-html{
-    height: 100%;
+html,
+body{
     overflow: hidden;
 }
 
@@ -9,7 +9,7 @@ html{
     .works_hr{
         z-index: -1;
         width: 100%;
-        margin-top: 20px;
+        margin-top: 10px;
         color: $textcolor;
         animation: rotatehr 10s ease 0s;
         animation-iteration-count: infinite;
@@ -25,9 +25,16 @@ html{
             margin: 50px;
             box-shadow: 1px 1px 5px 1px #999;
             background-color: #fff;
+            &:hover .box_work_img{
+                animation: rotateimg 0.5s ease 0s;
+                animation-iteration-count: infinite;
+            }
             #box_work_calunit_img{
                 padding: 15px 30px;
                 background-color: #5C8DF0;
+            }
+            .box_work_img{
+                box-shadow: 1px 1px 5px 1px #999;
             }
             .box_work_description{
                 position: absolute;
@@ -38,6 +45,7 @@ html{
                 -webkit-writing-mode: vertical-rl;
                 -ms-writing-mode: tb-rl;
                     writing-mode: vertical-rl;
+                color: $textcolor;
             }
         }
     }
@@ -45,7 +53,7 @@ html{
 
 @keyframes rotatehr{
     0%{
-        transform: translate(1000px, 500px) rotateZ(0deg) scaleX(3);
+        transform: translate(1000px, 0px) rotateZ(0deg) scaleX(3);
     }
     25%{
         transform: translate(-500px, -20px) rotateZ(360deg) scaleX(3);
@@ -58,5 +66,14 @@ html{
     }
     100%{
         transform: translate(1000px, 500px) rotateZ(0deg) scaleX(3);
+    }
+}
+
+@keyframes rotateimg{
+    0%{
+        transform: rotateZ(0deg)
+    }
+    100%{
+        transform: rotateZ(360deg)
     }
 }
