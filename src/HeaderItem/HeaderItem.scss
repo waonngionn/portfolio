@@ -29,7 +29,7 @@
             font-size: 24px;
         }
         &:hover{
-            // background-color: #666;
+            box-shadow: 1px 1px 5px 1px #999;
             animation: animeHeader 2s linear 0s forwards;
         }
     }
@@ -47,6 +47,7 @@
                 transition: all 0.5s ease-in-out;
                 color: $textcolor;
                 &:hover{
+                    box-shadow: 1px 1px 5px 1px #999;
                     color: #eee;
                     background-color: #666;
                 }

@@ -46,9 +46,10 @@
             .sns_a{
                 display: block;
                 padding: 15px 20px;
-                border:solid $textcolor 1px;
+                border:solid #999 1px;
                 border-radius: 5px;
-                color: $textcolor; 
+                color: $textcolor;
+                box-shadow: 1px 1px 5px 1px #999;
                 .fab{
                     transition: all 1s ease 0s;
                 }
