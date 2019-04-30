@@ -17,7 +17,7 @@ body{
     border:solid #ccc 1px;
     background-color: #fff;
     z-index: -1;
-    animation: opening_index_box 4s ease 2s forwards;
+    animation: opening_index_box 3s ease 1s forwards;
 
     @include pc {
         width: 50%;
