@@ -3,18 +3,23 @@
 #header{
     position: relative;
     top: 50px;
-    width: 70%;
+    width: 60%;
     margin: auto;
+    padding: 30px 50px 40px 50px;
     text-align: center;
     background-color: #fff;
     z-index: 1000;
     box-shadow: 1px 1px 5px 1px #999;
 
     .header_h1{
+        padding: 5px 20px 7px 20px;
         text-decoration: none;
+        border-radius: 5px;
+        border: solid #000 0px;
+        transition: all 0.5s ease-in-out;
         color: #707070;
         @include pc {
-            font-size: 98px;
+            font-weight: 300;
         }
         @include tablet {
             font-size: 49px;
@@ -22,10 +27,15 @@
         @include sp {
             font-size: 24px;
         }
+
+        &:hover{
+            color: #eee;
+            background-color: #666;
+        }
     }
 
     #header_ul{
-        margin-top: 50px;
+        margin-top: 30px;
         padding: 0;
 
         .header_li{
