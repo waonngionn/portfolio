@@ -11,6 +11,7 @@ body{ height: 100%; }
     margin: auto;
     text-align: center;
     border:solid #ccc 1px;
+    box-shadow: 1px 1px 5px 1px #999;
     background-color: $white;
     z-index: -1;
     animation: opening_index_box 3s ease 1s forwards;
@@ -45,11 +46,9 @@ body{ height: 100%; }
     #index_ul{
         margin-top: 50px;
         padding: 0;
-
         .index_li{
             display: inline;
             margin: 20px;
-
             .index_a{
                 padding: 5px 20px;
                 text-decoration: none;
@@ -58,6 +57,7 @@ body{ height: 100%; }
                 transition: all 0.5s ease-in-out;
                 color: $textcolor;
                 &:hover{
+                    box-shadow: 1px 1px 5px 1px #999;
                     color: #eee;
                     background-color: #666;
                 }
