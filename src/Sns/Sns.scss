@@ -1,0 +1,58 @@
+@import "../components/colorcomponent.scss";
+
+#box_sns{
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    #sns_ul{
+        margin-left: 390px;
+        .sns_li_icon{
+            margin: 50px;
+            float: left;
+            list-style: none;
+            transition: all 1s ease 0s;
+            &:nth-child(1){
+                &:hover{
+                    opacity: 0.5;
+                    transform: rotateZ(-360deg);
+                }
+                &:hover .fab{ transform: rotateZ(-360deg); }
+            }
+            &:nth-child(2){
+                &:hover{
+                    opacity: 0.5;
+                    transform: rotateZ(360deg);
+                }
+                &:hover .fab{ transform: rotateZ(360deg); }
+            }
+            &:nth-child(3){
+                &:hover{
+                    opacity: 0.5;
+                    transform: rotateX(360deg);
+                }
+                &:hover .fab{ transform: rotateX(360deg); }
+            }
+            &:nth-child(4){
+                &:hover{
+                    opacity: 0.5;
+                    transform: rotateY(360deg);
+                }
+                &:hover .fab{ transform: rotateY(360deg); }
+            }
+            &:hover .sns_a{
+                color: $white;
+                background-color: $textcolor;
+            }
+            .sns_a{
+                display: block;
+                padding: 15px 20px;
+                border:solid $textcolor 1px;
+                border-radius: 5px;
+                color: $textcolor; 
+                .fab{
+                    transition: all 1s ease 0s;
+                }
+            }
+        }
+    }
+}
