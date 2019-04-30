@@ -1,24 +1,19 @@
 @import "../components/mediaquery.scss";
+@import "../components/colorcomponent.scss";
 
 html,
-body{
-    height: 100%;
-}
+body{ height: 100%; }
 #app,
-#index{
-    height: 100%;
-}
-
+#index{ height: 100%; }
 #index_box {
     position: absolute;
     left: 0; right: 0;
     margin: auto;
     text-align: center;
     border:solid #ccc 1px;
-    background-color: #fff;
+    background-color: $white;
     z-index: -1;
     animation: opening_index_box 3s ease 1s forwards;
-
     @include pc {
         width: 50%;
         top: 285px;
@@ -34,7 +29,7 @@ body{
     }
     .index_h1{
         text-decoration: none;
-        color: #707070;
+        color: $textcolor;
         @include pc {
             letter-spacing: 0.3em;
             font-size: 46px;
@@ -47,7 +42,6 @@ body{
             font-size: 24px;
         }
     }
-
     #index_ul{
         margin-top: 50px;
         padding: 0;
@@ -60,9 +54,9 @@ body{
                 padding: 5px 20px;
                 text-decoration: none;
                 border-radius: 5px;
-                border: solid #000 0px;
+                border: solid $black 0px;
                 transition: all 0.5s ease-in-out;
-                color: #707070;
+                color: $textcolor;
                 &:hover{
                     color: #eee;
                     background-color: #666;

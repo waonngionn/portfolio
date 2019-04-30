@@ -1,3 +1,4 @@
+@import "../components/colorcomponent.scss";
 @import "../components/mediaquery.scss";
 
 #header{
@@ -7,16 +8,16 @@
     margin: auto;
     padding: 30px 50px 40px 50px;
     text-align: center;
-    background-color: #fff;
+    background-color: $white;
     z-index: 1000;
     box-shadow: 1px 1px 5px 1px #999;
     .header_h1{
         padding: 5px 20px 7px 20px;
         text-decoration: none;
         border-radius: 5px;
-        border: solid #000 0px;
+        border: solid $white 0px;
         transition: all 0.5s ease-in-out;
-        color: #707070;
+        color: $textcolor;
         @include pc {
             letter-spacing: 0.3em;
             font-weight: 300;
@@ -42,9 +43,9 @@
                 padding: 5px 20px;
                 text-decoration: none;
                 border-radius: 5px;
-                border: solid #000 0px;
+                border: solid $white 0px;
                 transition: all 0.5s ease-in-out;
-                color: #707070;
+                color: $textcolor;
                 &:hover{
                     color: #eee;
                     background-color: #666;
