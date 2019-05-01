@@ -34,22 +34,73 @@
         }
     }
     #header_ul{
-        margin-top: 30px;
-        padding: 0;
+        @include pc {
+            margin-top: 30px;
+            padding: 0;
+        }
+        @include tablet {
+            margin-top: 50px;
+            padding: 0;
+        }
+        @include sp {
+            margin-top: 30px;
+        }
         .header_li{
             display: inline;
-            margin: 20px;
+            @include pc {
+                margin: 20px;
+            }
+            @include tablet {
+                margin: 20px;
+            }
+            @include sp {
+                margin: 0;
+            }
             .header_a{
-                padding: 5px 20px;
                 text-decoration: none;
                 border-radius: 5px;
                 border: solid $white 0px;
                 transition: all 0.5s ease-in-out;
                 color: $textcolor;
+                @include pc {
+                    padding: 5px 20px;
+                }
+                @include tablet {
+                    margin: 0;
+                    padding: 0;
+                }
+                @include sp {
+                    margin: 0 20px;
+                    padding: 0;
+                }
                 &:hover{
                     box-shadow: 1px 1px 5px 1px #999;
                     color: #eee;
                     background-color: #666;
+                }
+                .header_span{
+                    @include pc {
+                        display: inline;
+                    }
+                    @include tablet {
+                        display: inline;
+                        font-size: 30px;
+                    }
+                    @include sp {
+                        display: none;
+                    }
+                }
+                .header_icon{
+                    @include pc {
+                        display: none;
+                    }
+                    @include tablet {
+                        display: none;
+                    }
+                    @include sp {
+                        display: inline;
+                        font-size: 28px;
+                    }
                 }
             }
         }
