@@ -27,7 +27,7 @@ body{ height: 100%; }
         opacity: 0.8;
         color: $textcolor;
         @include pc {
-            margin-top: 170px;
+            margin-top: 130px;
         }
         @include tablet {
         }
@@ -35,8 +35,7 @@ body{ height: 100%; }
             margin-top: 100px;
         }
         .box_contents{
-            width: 35%; height: 41%;
-            margin-top: 100px;
+            width: 35%;
             word-break: break-all;
             background-color: $white;
             box-shadow: 1px 1px 5px 1px #999;
@@ -51,7 +50,8 @@ body{ height: 100%; }
             }
             &:nth-child(1){
                 @include pc {
-                    top: 0; right: 0;
+                    height: 39%;
+                    top: 0; left: 0;
                 }
                 @include tablet {
                 }
@@ -60,6 +60,7 @@ body{ height: 100%; }
             }
             &:nth-child(2){
                 @include pc {
+                    height: 39%;
                     top: 0; right: 0;
                 }
                 @include tablet {
@@ -70,7 +71,7 @@ body{ height: 100%; }
             &:nth-child(3){
                 @include pc {
                     bottom: 0; left: 0;
-                    width: 560px;
+                    width: 560px; height: 39%;
                     padding: 10px 100px;
                 }
                 @include tablet {
