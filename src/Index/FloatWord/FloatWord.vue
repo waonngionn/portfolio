@@ -11,7 +11,7 @@ export default {
       // 12個ある
       bottoms: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110],
       lefts: [0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100],
-      contents: ['HTML', 'CSS', 'SCSS', 'Bootstrap', 'JavaScript', 'Vue.js', 'jQuery', 'PHP', 'Laravel', 'C/C++', 'Adobe XD', 'SEO']
+      contents: ['HTML', 'CSS', 'SCSS', 'Bootstrap', 'JavaScript', 'Vue.js', 'jQuery', 'PHP', 'Laravel', 'C/C++', 'AdobeXD', 'SEO']
     }
   },
   methods: {

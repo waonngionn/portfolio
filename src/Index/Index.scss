@@ -21,45 +21,99 @@ body{ height: 100%; }
         padding: 50px;
     }
     @include tablet {
-        top: 285px;
+        top: 450px;
+        padding: 70px 130px;
     }
     @include sp {
-        width: 80%;
-        top: 285px;
-        padding: 10px;
+        width: 78%;
+        top: 200px;
+        padding: 20px 10px;
     }
     .index_h1{
         text-decoration: none;
         color: $textcolor;
+        font-weight: 300;
         @include pc {
             letter-spacing: 0.3em;
             font-size: 46px;
-            font-weight: 300;
         }
         @include tablet {
+            letter-spacing: 0.3em;
             font-size: 49px;
         }
         @include sp {
+            letter-spacing: 0.3em;
             font-size: 24px;
         }
     }
     #index_ul{
-        margin-top: 50px;
-        padding: 0;
+        @include pc {
+            margin-top: 50px;
+            padding: 0;
+        }
+        @include tablet {
+            margin-top: 50px;
+            padding: 0;
+        }
+        @include sp {
+            margin-top: 30px;
+        }
         .index_li{
             display: inline;
-            margin: 20px;
+            @include pc {
+                margin: 20px;
+            }
+            @include tablet {
+                margin: 20px;
+            }
+            @include sp {
+                margin: 0;
+            }
             .index_a{
-                padding: 5px 20px;
                 text-decoration: none;
                 border-radius: 5px;
                 border: solid $black 0px;
                 transition: all 0.5s ease-in-out;
                 color: $textcolor;
+                @include pc {
+                    padding: 5px 20px;
+                }
+                @include tablet {
+                    margin: 0;
+                    padding: 0;
+                }
+                @include sp {
+                    margin: 0 20px;
+                    padding: 0;
+                }
                 &:hover{
                     box-shadow: 1px 1px 5px 1px #999;
                     color: #eee;
                     background-color: #666;
+                }
+                .index_span{
+                    @include pc {
+                        display: inline;
+                    }
+                    @include tablet {
+                        display: inline;
+                        font-size: 30px;
+                    }
+                    @include sp {
+                        display: none;
+                    }
+                }
+                .index_icon{
+                    @include pc {
+                        display: none;
+                    }
+                    @include tablet {
+                        display: none;
+                    }
+                    @include sp {
+                        display: inline;
+                        font-size: 36px;
+                    }
                 }
             }
         }
