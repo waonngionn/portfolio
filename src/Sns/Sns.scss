@@ -1,16 +1,39 @@
 @import "../components/colorcomponent.scss";
+@import "../components/mediaquery.scss";
 
 #box_sns{
     position: relative;
     margin: auto;
-    margin-top: 250px;
+    @include pc {
+        margin-top: 250px;
+    }
+    @include tablet {
+    }
+    @include sp {
+        margin-top: 100px;
+    }
     #sns_ul{
-        margin-left: 390px;
+        @include pc {
+            margin-left: 390px;
+        }
+        @include tablet {
+            margin-left: 70px;
+        }
+        @include sp {
+            margin: 0;
+        }
         .sns_li_icon{
-            margin: 50px;
             float: left;
             list-style: none;
             transition: all 1s ease 0s;
+            @include pc {
+                margin: 50px;
+            }
+            @include tablet {
+            }
+            @include sp {
+                margin: 25px;
+            }
             &:nth-child(1){
                 &:hover{
                     opacity: 0.5;
@@ -45,10 +68,12 @@
             }
             .sns_a{
                 display: block;
+                width: 4em;
                 padding: 15px 20px;
                 border:solid #999 1px;
                 border-radius: 5px;
                 color: $textcolor;
+                text-align: center;
                 box-shadow: 1px 1px 5px 1px #999;
                 .fab{
                     transition: all 1s ease 0s;
