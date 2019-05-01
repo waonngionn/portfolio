@@ -1,8 +1,5 @@
-@import "../components/mediaquery.scss";
-@import "../components/colorcomponent.scss";
+@import "../components/style.scss";
 
-html,
-body{ height: 100%; }
 #app,
 #index{ height: 100%; }
 #index_box {
@@ -10,8 +7,8 @@ body{ height: 100%; }
     left: 0; right: 0;
     margin: auto;
     text-align: center;
-    border:solid #ccc 1px;
-    box-shadow: 1px 1px 5px 1px #999;
+    border:solid $gray_c 1px;
+    box-shadow: 1px 1px 5px 1px $gray_9;
     background-color: $white;
     z-index: -1;
     animation: opening_index_box 3s ease 1s forwards;
@@ -25,9 +22,12 @@ body{ height: 100%; }
         top: 350px;
         padding: 70px 60px;
     }
+    @include ipad {
+        top: 10px;   
+    }
     @include sp {
         width: 80%;
-        top: 200px;
+        top: 25%;
         padding: 20px 10px;
     }
     .index_h1{

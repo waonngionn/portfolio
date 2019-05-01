@@ -1,9 +1,7 @@
-@import "../components/colorcomponent.scss";
-@import "../components/mediaquery.scss";
+@import "../components/style.scss";
 
-html,
-body{ overflow: hidden; }
 #works{
+    overflow: hidden;
     .works_hr{
         z-index: -1;
         width: 100%;
