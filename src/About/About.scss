@@ -9,7 +9,7 @@ body{ height: 100%; }
     width: 100%; height: 100%;
     z-index: 0;
     @include sp {
-        height: 120%;
+        height: 170%;
     }
     &::after{
         content: '';
@@ -29,7 +29,7 @@ body{ height: 100%; }
         @include sp {
             display: inline-block;
             width: 100%;
-            height: 120%;
+            height: 170%;
         }
     }
     #box_about{
@@ -147,6 +147,7 @@ body{ height: 100%; }
             }
             // skill
             .about_skill_ul{
+                padding-left: 10px;
                 @include pc {
                     float: left;
                 }

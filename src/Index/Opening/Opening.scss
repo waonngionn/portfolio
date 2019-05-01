@@ -1,4 +1,5 @@
 @import "../../components/colorcomponent.scss";
+@import "../../components/mediaquery.scss";
 $text_position: 240px;
 
 #opening{
@@ -10,9 +11,17 @@ $text_position: 240px;
     animation: opening 3s ease 1s forwards;
     #opeing_h1{
         position: relative;
-        top: $text_position;
         letter-spacing: 0.1em;
         animation: opening_text 3s ease 1s forwards;
+        @include pc {
+            top: $text_position;
+        }
+        @include tablet {
+            top: $text_position * 1.7;
+        }
+        @include sp {
+            top: $text_position;
+        }
     }
 }
 @keyframes opening {

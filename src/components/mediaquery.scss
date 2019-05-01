@@ -1,6 +1,8 @@
 $pc: 8000px;
 $tablet: 1025px;
+$ipad: 800px;
 $sp: 480px;
+$se: 321px;
 
 @mixin pc {
     @media screen and (max-width:$pc) {
@@ -12,8 +14,18 @@ $sp: 480px;
       @content;
     }
 }
+@mixin ipad {
+  @media screen and (max-width:$ipad) {
+    @content;
+  }
+}
 @mixin sp {
     @media screen and (max-width:$sp) {
       @content;
     }
+}
+@mixin se {
+  @media screen and (max-width:$se) {
+    @content;
+  }
 }

@@ -31,8 +31,14 @@
             }
             @include tablet {
             }
+            @include ipad {
+                margin: 20px;
+            }
             @include sp {
                 margin: 25px;
+            }
+            @include se {
+                margin: 10px;
             }
             &:nth-child(1){
                 &:hover{

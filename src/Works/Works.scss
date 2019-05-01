@@ -24,6 +24,9 @@ body{ overflow: hidden; }
             margin-top: 30px;
             margin-left: 45px;
         }
+        @include se {
+            transform: translate(-30px);
+        }
         .box_work{
             position: relative;
             float: left;
@@ -37,8 +40,11 @@ body{ overflow: hidden; }
             @include tablet {
             }
             @include sp {
-                width: $contentwidth/8; height: 450px;
+                width: $contentwidth/8; height: 55vh;
                 margin: 0;
+            }
+            @include se {
+                height: 50vh;
             }
             &:hover .box_work_img{
                 animation: rotateimg 0.5s ease 0s;
@@ -67,7 +73,13 @@ body{ overflow: hidden; }
                 }
                 @include sp {
                     top: 130px;
-                    line-height: $contentwidth/24;
+                    height: 30vh;
+                    line-height: $contentwidth/32;
+                }
+                @include se {
+                    top: 110px;
+                    height: 28vh;
+                    line-height: $contentwidth/45;
                 }
             }
         }
