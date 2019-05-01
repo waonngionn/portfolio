@@ -4,13 +4,20 @@
 #header{
     position: relative;
     top: 50px;
-    width: 60%;
     margin: auto;
     padding: 30px 50px 40px 50px;
     text-align: center;
     background-color: $white;
     z-index: 1000;
     box-shadow: 1px 1px 5px 1px #999;
+    @include pc {
+        width: 70%;
+    }
+    @include tablet {
+    }
+    @include sp {
+        width: 60%;
+    }
     .header_h1{
         padding: 5px 20px 7px 20px;
         text-decoration: none;
