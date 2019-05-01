@@ -1,10 +1,8 @@
 @import "../components/colorcomponent.scss";
+@import "../components/mediaquery.scss";
 
 html,
-body{
-    overflow: hidden;
-}
-
+body{ overflow: hidden; }
 #works{
     .works_hr{
         z-index: -1;
@@ -18,19 +16,36 @@ body{
         position: relative;
         width: $contentwidth;
         margin: auto;
+        @include pc {
+        }
+        @include tablet {
+        }
+        @include sp {
+            margin-top: 30px;
+            margin-left: 45px;
+        }
         .box_work{
             position: relative;
             float: left;
-            width: $contentwidth/5; height: 500px;
-            margin: 50px;
+            border-bottom:solid #999 1px;
             box-shadow: 1px 1px 5px 1px #999;
             background-color: #fff;
+            @include pc {
+                width: $contentwidth/5; height: 500px;
+                margin: 50px;
+            }
+            @include tablet {
+            }
+            @include sp {
+                width: $contentwidth/8; height: 450px;
+                margin: 0;
+            }
             &:hover .box_work_img{
                 animation: rotateimg 0.5s ease 0s;
                 animation-iteration-count: infinite;
             }
             #box_work_calunit_img{
-                padding: 15px 30px;
+                padding: 24.5px 30px;
                 background-color: #5C8DF0;
             }
             .box_work_img{
@@ -38,14 +53,22 @@ body{
             }
             .box_work_description{
                 position: absolute;
-                top: 190px;
                 right: 0;
                 height: 300px;
-                line-height: $contentwidth/15;
                 -webkit-writing-mode: vertical-rl;
                 -ms-writing-mode: tb-rl;
                     writing-mode: vertical-rl;
                 color: $textcolor;
+                @include pc {
+                    top: 190px;
+                    line-height: $contentwidth/15;
+                }
+                @include tablet {
+                }
+                @include sp {
+                    top: 130px;
+                    line-height: $contentwidth/24;
+                }
             }
         }
     }
