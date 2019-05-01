@@ -8,12 +8,10 @@ body{ height: 100%; }
 #about{
     width: 100%; height: 100%;
     z-index: 0;
-    @include sp {
-        height: 170%;
-    }
+    @include sp { height: 170%; }
     &::after{
         content: '';
-        background-image: url('https://waonngionn.github.io/portfolio/static/img/aboutbackground.fa0aadb.JPG');
+        background-image: url('https://waonngionn.github.io/portfolio/static/aboutbackground.JPG');
         background-size: contain;
         filter: blur(8px);
         position: absolute;
