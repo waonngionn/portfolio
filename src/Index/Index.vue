@@ -10,6 +10,17 @@ export default {
     Opening,
     FloatWord
   },
-  name: 'Index'
+  name: 'Index',
+  mounted: function () {
+    let textboxeasteregg = document.getElementById('textbox_easter_egg')
+    let btneasteregg = document.getElementById('btn_easter_egg')
+    btneasteregg.addEventListener('click', function () {
+      if (textboxeasteregg.value === '○△□') {
+        alert('クソガキども、世界を変えろ！')
+      } else {
+        alert('あなたのwebサイト制作します')
+      }
+    })
+  }
 }
 </script>

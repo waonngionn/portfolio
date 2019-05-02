@@ -83,6 +83,28 @@ body,
             }
         }
     }
+
+    // easter egg
+    .box_easter_egg{
+        @include pc { margin-top: 50px; }
+        @include sp { margin-top: 20px; }
+        #textbox_easter_egg{
+            width: 40%;
+            padding: 3px 0;
+            border-radius: 3px;
+            box-shadow: 0 0 8px 0 $box-shadow-color;
+            &:focus{
+                box-shadow: 0 0 8px 0 $box-shadow-color;
+            }
+        }
+        #btn_easter_egg{
+            width: 6em;
+            margin-left: 20px;
+            padding: 3px 20px;
+            border-radius: 3px;
+            box-shadow: 0 0 8px 0 $box-shadow-color;
+        }
+    }
 }
 
 /**
