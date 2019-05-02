@@ -4,115 +4,78 @@
     position: relative;
     top: 50px;
     margin: auto;
-    padding: 30px 50px 40px 50px;
+    padding: 30px 10px 40px 10px;
     text-align: center;
-    background-color: $white;
+    background-color: $box-backgroundcolor;
     z-index: 1000;
     box-shadow: 1px 1px 5px 1px #999;
-    @include pc {
-        width: 70%;
-    }
-    @include tablet {
-    }
-    @include sp {
-        width: 65%;
-    }
-    @include se {
-        width: 70%;
-        padding: 30px 35px 40px 35px;
-    }
+    @include pc { width: 70%; }
+    @include sp { width: 85%; }
+
+    // 三戸尚樹
     .header_h1{
         padding: 5px 20px 7px 20px;
-        text-decoration: none;
         border-radius: 5px;
-        border: solid $white 0px;
         transition: all 0.5s ease-in-out;
-        color: $textcolor;
-        @include pc {
-            letter-spacing: 0.3em;
-            font-weight: 300;
-        }
-        @include tablet {
-            font-size: 49px;
-        }
-        @include sp {
-            font-size: 24px;
-        }
+        letter-spacing: 0.3em;
+        font-weight: 300;
+        @include pc { font-size: 40px; }
+        @include sp { font-size: 24px; }
+
         &:hover{
             box-shadow: 1px 1px 5px 1px #999;
             animation: animeHeader 2s linear 0s forwards;
         }
     }
+
+    // 横並びリスト
     #header_ul{
-        @include pc {
-            margin-top: 30px;
-            padding: 0;
-        }
-        @include tablet {
-            margin-top: 50px;
-            padding: 0;
-        }
-        @include sp {
-            margin-top: 30px;
-        }
-        @include se {
-            transform: translate(-10px);
-        }
+        font-size: 0;
+        text-align: center;
+        @include pc { margin-top: 50px; }
+        @include sp { margin-top: 30px; }
         .header_li{
-            display: inline;
+            display: inline-block;
             @include pc {
-                margin: 20px;
-            }
-            @include tablet {
-                margin: 20px;
+                margin: 0 15px;
+                padding: 15px 10px;
+                font-size: 14px;
             }
             @include sp {
                 margin: 0;
+                padding: 0;
             }
             .header_a{
-                text-decoration: none;
                 border-radius: 5px;
                 border: solid $white 0px;
                 transition: all 0.5s ease-in-out;
-                color: $textcolor;
-                @include pc {
-                    padding: 5px 20px;
-                }
-                @include tablet {
-                    margin: 0;
-                    padding: 0;
-                }
+                @include pc { padding: 5px 10px; }
                 @include sp {
-                    margin: 0 20px;
+                    margin: 0 15px;
                     padding: 0;
                 }
                 &:hover{
-                    box-shadow: 1px 1px 5px 1px #999;
-                    color: #eee;
-                    background-color: #666;
+                    box-shadow: 1px 1px 5px 1px $box-shadow-color;
+                    background-color: $hover-backgroundcolor;
                 }
+                &:hover .header_span{ color: $white; }
+
+                // pc: テキスト表示　　アイコン非表示
+                // sp: テキスト非表示　アイコン表示
                 .header_span{
+                    transition: all 0.5s ease-in-out;
                     @include pc {
                         display: inline;
+                        font-size: 20px;
                     }
-                    @include tablet {
-                        display: inline;
-                        font-size: 30px;
-                    }
-                    @include sp {
-                        display: none;
-                    }
+                    @include sp { display: none; }
                 }
                 .header_icon{
-                    @include pc {
-                        display: none;
-                    }
-                    @include tablet {
-                        display: none;
-                    }
+                    transition: all 0.5s ease-in-out;
+                    @include pc { display: none; }
                     @include sp {
                         display: inline;
-                        font-size: 28px;
+                        font-size: 30px;
                     }
                 }
             }
@@ -120,26 +83,29 @@
     }
 }
 
+/**
+ * keyframes
+ */
 @keyframes animeHeader{
     0%{
-        border-top:solid 1px #666;
+        border-top:solid 1px $border-color;
     }
     25%{
-        border-top:solid 1px #666;
-        border-right:solid 1px #666;
+        border-top:solid 1px $border-color;
+        border-right:solid 1px $border-color;
     }
     50%{
-        border-top:solid 1px #666;
-        border-right:solid 1px #666;
-        border-bottom:solid 1px #666;
+        border-top:solid 1px $border-color;
+        border-right:solid 1px $border-color;
+        border-bottom:solid 1px $border-color;
     }
     75%{
-        border:solid 1px #666;
+        border:solid 1px $border-color;
         color: $textcolor;
         background-color: $white;
     }
     100%{
         color: #eee;
-        background-color: #666;
+        background-color: $border-color;
     }
 }

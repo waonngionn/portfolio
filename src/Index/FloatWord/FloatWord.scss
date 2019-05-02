@@ -1,17 +1,8 @@
-@import "../components/style.scss";
+@import "../../components/style.scss";
 
 .floatword_box {
-    margin: 0;
-    padding: 0;
     opacity: 0.5;
     z-index: -10;
-    @include pc {
-        font-size: 36px;
-    }
-    @include tablet {
-        font-size: 28px;
-    }
-    @include sp {
-        font-size: 24px;
-    }
+    @include pc { font-size: 36px; }
+    @include sp { font-size: 24px; }
 }

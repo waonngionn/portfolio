@@ -1,7 +1,12 @@
 $black: #000;
 $textcolor: #707070; // 文字の色
-$gray_9: #999; // 枠線の色
+$box-shadow-color: #999; // 枠線の色
 $gray_c: #ccc;
-$white: #fff; // 背景色
+$white: #fff; // ボックスの背景色
+$box-backgroundcolor: #fff; // ボックスの背景色
+$html_backgroundcolor: #fafafa; // 背景色
+$hover-color: #fff; // hoverした時のテキストの色
+$hover-backgroundcolor: #666; // hoverした時の背景色
+$border-color: #666;
 
 $contentwidth: 760px;

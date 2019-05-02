@@ -4,45 +4,32 @@
     overflow: hidden;
     .works_hr{
         z-index: -1;
-        width: 100%;
+        width: 2000px;
         margin-top: 10px;
-        color: $textcolor;
         animation: rotatehr 10s ease 0s;
         animation-iteration-count: infinite;
     }
     #box_works{
-        position: relative;
-        width: $contentwidth;
-        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         @include pc {
         }
-        @include tablet {
-        }
         @include sp {
-            margin-top: 30px;
-            margin-left: 45px;
-        }
-        @include se {
-            transform: translate(-30px);
+            margin-top: 10px;
         }
         .box_work{
             position: relative;
-            float: left;
-            border-bottom:solid #999 1px;
-            box-shadow: 1px 1px 5px 1px #999;
-            background-color: #fff;
+            border-bottom:solid $border-color 1px;
+            box-shadow: 1px 1px 5px 1px $box-shadow-color;
+            background-color: $box-backgroundcolor;
             @include pc {
                 width: $contentwidth/5; height: 500px;
                 margin: 50px;
             }
-            @include tablet {
-            }
             @include sp {
                 width: $contentwidth/8; height: 55vh;
                 margin: 0;
-            }
-            @include se {
-                height: 50vh;
             }
             &:hover .box_work_img{
                 animation: rotateimg 0.5s ease 0s;
@@ -52,32 +39,20 @@
                 padding: 24.5px 30px;
                 background-color: #5C8DF0;
             }
-            .box_work_img{
-                box-shadow: 1px 1px 5px 1px #999;
-            }
+            .box_work_img{ box-shadow: 1px 1px 5px 1px $box-shadow-color; }
             .box_work_description{
                 position: absolute;
                 right: 0;
                 height: 300px;
-                -webkit-writing-mode: vertical-rl;
-                -ms-writing-mode: tb-rl;
-                    writing-mode: vertical-rl;
-                color: $textcolor;
+                writing-mode: vertical-rl;
                 @include pc {
                     top: 190px;
                     line-height: $contentwidth/15;
-                }
-                @include tablet {
                 }
                 @include sp {
                     top: 130px;
                     height: 30vh;
                     line-height: $contentwidth/32;
-                }
-                @include se {
-                    top: 110px;
-                    height: 28vh;
-                    line-height: $contentwidth/45;
                 }
             }
         }

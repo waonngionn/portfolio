@@ -1,26 +1,44 @@
-@import "../components/style.scss";
+@import "../../components/style.scss";
 
-$text_position: 30%;
-$minus_text_position: -100px;
+$text-position-pc: 40%;
+$text-position-sp: 30%;
+$end-text-position: -100px;
+
 #opening{
     width: 100%; height: 100%;
     z-index: 1000;
     text-align: center;
-    color: $white;
     background-color: $black;
     animation: opening 3s ease 1s forwards;
     #opeing_h1{
         position: relative;
-        top: $text_position;
         letter-spacing: 0.1em;
-        animation: opening_text 3s ease 1s forwards;
+        color: $white;
+        @include pc {
+            top: $text-position-pc;
+            font-size: 44px;
+            animation: opening_text_pc 3s ease 1s forwards;
+        }
+        @include sp {
+            top: $text-position-sp;
+            font-size: 24px;
+            animation: opening_text_sp 3s ease 1s forwards;
+        }
     }
 }
+
+/**
+ * keyframes
+ **/
 @keyframes opening {
     0%{ height: 100%; }
     100%{ height: 0; }
 }
-@keyframes opening_text {
-    0%{ top: $text_position; }
-    100%{ top: $minus_text_position; }
+@keyframes opening_text_pc {
+    0%{ top: $text-position-pc; }
+    100%{ top: $end-text-position; }
+}
+@keyframes opening_text_sp {
+    from{ top: $text-position-sp; }
+    to{ top: $end-text-position; }
 }
