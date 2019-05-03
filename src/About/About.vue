@@ -14,9 +14,8 @@ export default {
       const useragent = navigator.userAgent
       if (useragent.indexOf('iPhone') > 0 || useragent.indexOf('iPod') > 0 || useragent.indexOf('Android') > 0 && useragent.indexOf('Mobile') > 0) {
         return 'sp'
-      } else {
-        return 'pc'
       }
+      return 'pc'
     }
   },
   mounted: function () {
