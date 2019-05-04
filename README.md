@@ -2,11 +2,19 @@
 
 ## 仕様 -> 技術
 animation
-- ボタンhover時、rotateZ -> scss
-- 
-background-image
+- ボタンhover時:rotate, background-color, color -> scss
+background-image:ぼかし
 SPA -> Vue.js
 jsパッケージ管理 -> npm, yarn
+
+## 主に使用した技術まとめ
+
+## js
+- addEventListener
+- css操作
+
+## Vue.js
+- SPA (Single Page Application)
 
 ## css
 - mediaquery
@@ -37,9 +45,5 @@ jsパッケージ管理 -> npm, yarn
 - 変数
 - 入れ子
 
-## js
-- addEventListener
-- css操作
-
-## Vue.js
-- SPA (Single Page Application)
+## GitHub
+- ソースコード管理
