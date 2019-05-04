@@ -1,8 +1,13 @@
 # portfolio
+プログラマーとしてのポートフォリオサイトです。
+scssとVue.jsは未経験ながらも学習しながら
+7日間かけて制作しました。
+アドバイスあったらください。
 
 ## 仕様 -> 技術
 animation
 - ボタンhover時:rotate, background-color, color -> scss
+
 background-image:ぼかし
 SPA -> Vue.js
 jsパッケージ管理 -> npm, yarn
