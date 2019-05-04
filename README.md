@@ -1,30 +1,45 @@
 # portfolio
 
-> A Vue.js project
+## 仕様 -> 技術
+animation
+- ボタンhover時、rotateZ -> scss
+- 
+background-image
+SPA -> Vue.js
+jsパッケージ管理 -> npm, yarn
 
-## Build Setup
+## css
+- mediaquery
+- opacity
+- z-index
+- display
+- position
+- top right bottom left
+- width height
+- margin
+- padding
+- keyframes -> animation
+- transition
+- transform -> rotate scale etc..
+- color
+- background
+- outline
+- border
+- box-shadow
+- text-align
+- float
+- font-family
+- font-size
+- font-weight
 
-``` bash
-# install dependencies
-npm install
+## scss
+- mediaquery
+- 変数
+- 入れ子
 
-# serve with hot reload at localhost:8080
-npm run dev
+## js
+- addEventListener
+- css操作
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Vue.js
+- SPA (Single Page Application)
