@@ -8,9 +8,9 @@ export default {
     return {
       width: window.innerWidth,
       height: window.innerHeight,
-      // 12個ある
-      bottoms: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110],
-      lefts: [0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100],
+      // 12 + 1個ある
+      bottoms: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120],
+      lefts: [0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200],
       contents: ['HTML', 'CSS', 'SCSS', 'Bootstrap', 'JavaScript', 'Vue.js', 'jQuery', 'PHP', 'Laravel', 'C/C++', 'AdobeXD', 'SEO']
     }
   },
@@ -38,12 +38,12 @@ export default {
     // 左からの位置をランダムに決める関数
     setLeftsByrandom: function (self) {
       let lefts = [0]
-      let leftspace = Math.floor(self.width / 12)
-      for (let i = 0; i < 12; i++) {
+      let leftspace = Math.floor(self.width / 13)
+      for (let i = 0; i < 13; i++) {
         lefts.push(leftspace * (i + 1))
       }
       Object.keys(self.lefts).forEach(function (index) {
-        let selectindex = Math.floor(Math.random() * (12 - index) + 0)
+        let selectindex = Math.floor(Math.random() * (13 - index) + 0)
         if (lefts[selectindex] || lefts[selectindex] === 0) {
           self.$set(self.lefts, index, lefts[selectindex])
           lefts.splice(selectindex, 1)

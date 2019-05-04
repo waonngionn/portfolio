@@ -1,8 +1,42 @@
 @import "../../components/style.scss";
 
-.floatword_box {
+.floatword_box,
+.box_easter_egg_btn{
     opacity: 0.5;
     z-index: -10;
     @include pc { font-size: 36px; }
     @include sp { font-size: 24px; }
+}
+
+.box_easter_egg_btn{
+    z-index: -1;
+    animation: opening_open_btn 3s ease 1s forwards;
+    @include pc { margin-top: 45px; }
+    @include sp { margin-top: 10%; }
+    // open button
+    #btn_open_textbox{
+        width: 5em; height: 5em;
+        border-radius: 5em;
+        text-align: center;
+        background-color: $box-backgroundcolor;
+        box-shadow: 0 2px 5px 0 $box-shadow-color;
+        transition: all 1s ease 0s;
+        @include pc { font-size: 16px; }
+        @include sp { font-size: 10px; }
+        &:hover{
+            color: $hover-color;
+            background-color: $hover-backgroundcolor;
+            cursor: pointer;
+            transform: rotateZ(720deg);
+        }
+    }
+}
+
+/**
+ * keyframes
+ */
+ @keyframes opening_open_btn{
+    0%{ z-index: -1; }
+    99%{ z-index: -1; }
+    100%{ z-index: 1; }
 }

@@ -6,14 +6,15 @@ $end-text-position: -100px;
 
 #opening{
     width: 100%; height: 100%;
-    z-index: 1000;
     text-align: center;
     background-color: $black;
+    z-index: 1000;
     animation: opening 3s ease 1s forwards;
     #opeing_h1{
         position: relative;
         letter-spacing: 0.1em;
         color: $white;
+        z-index: 1000;
         @include pc {
             top: $text-position-pc;
             font-size: 44px;

@@ -2,4 +2,8 @@
     <div class="floatword_box" v-for="(content, index) in contents" v-bind:key="content.id"
         v-bind:style="{bottom: bottoms[index] + 'px', left: lefts[index] + 'px'}" style="position: fixed">
         {{content}}</div>
+    <div class="box_easter_egg_btn" v-bind:style="{bottom: bottoms[12] + 'px', left: lefts[12] + 'px'}"
+        style="position: fixed">
+        <button type="button" id="btn_open_textbox">click</button>
+    </div>
 </div>

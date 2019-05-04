@@ -85,61 +85,38 @@ body,
     }
 
     // easter egg
-    // .box_easter_egg{
-    //     @include pc { margin-top: 45px; }
-    //     @include sp { margin-top: 10%; }
-    //     // open button
-    //     #btn_open_textbox{
-    //         width: 5em; height: 5em;
-    //         border-radius: 5em;
-    //         text-align: center;
-    //         background-color: $box-backgroundcolor;
-    //         box-shadow: 0 2px 5px 0 $box-shadow-color;
-    //         transition: all 1s ease 0s;
-    //         @include pc {
-    //             font-size: 16px;
-    //         }
-    //         @include sp {
-    //             font-size: 10px;
-    //         }
-    //         &:hover{
-    //             color: $hover-color;
-    //             background-color: $hover-backgroundcolor;
-    //             cursor: pointer;
-    //             transform: rotateZ(720deg);
-    //         }
-    //     }
-    //     #box_easter_egg_textbox{
-    //         position: relative;
-    //         top: -3em;
-    //         opacity: 0;
-    //         z-index: -1;
-    //         transition: all 1s ease 0s;
-    //     }
-    //     #textbox_easter_egg{
-    //         outline: 0;
-    //         width: 10em;
-    //         border: 0;
-    //         border-bottom: solid $border-color 1px;
-    //         transition: all 1s ease 0s;
-    //         &:before{
-    //             content: '';
-    //             width: 0; height: 2px;
-    //             background-color: #2196F3;
-    //         }
-    //         &:focus{
-    //             width: 12em;
-    //             padding: 0 3px;
-    //         }
-    //     }
-    //     #btn_easter_egg{
-    //         width: 5em;
-    //         outline: 0;
-    //         border: solid $border-color 1px;
-    //         background-color: $box-backgroundcolor;
-    //         border-radius: .3em;
-    //     }
-    // }
+        #box_easter_egg_textbox{
+            position: relative;
+            top: 1.2em;
+            padding-bottom: 10px;
+            opacity: 0;
+            z-index: -1;
+            transition: all 1s ease 0s;
+        }
+        #textbox_easter_egg{
+            outline: 0;
+            width: 10em;
+            border: 0;
+            border-bottom: solid $border-color 1px;
+            transition: all 1s ease 0s;
+            &:before{
+                content: '';
+                width: 0; height: 2px;
+                background-color: #2196F3;
+            }
+            &:focus{
+                width: 12em;
+                padding: 0 3px;
+            }
+        }
+        #btn_easter_egg{
+            width: 5em;
+            outline: 0;
+            border: solid $border-color 1px;
+            box-shadow: 0 1px 1px .1px $box-shadow-color;
+            background-color: $box-backgroundcolor;
+            border-radius: .3em;
+        }
 }
 
 /**
@@ -148,5 +125,5 @@ body,
 @keyframes opening_index_box{
     0%{ z-index: -1; }
     99%{ z-index: -1; }
-    100%{ z-index: 1; }
+    100%{ z-index: 10; }
 }
