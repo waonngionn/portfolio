@@ -19,7 +19,7 @@ export default {
     }
   },
   mounted: function () {
-    if (this.getDevice === 'pc') {
+    if (this.getDevice() === 'pc') {
       let contents = document.getElementsByClassName('box_contents')
       contents[1].style.height = contents[0].clientHeight + 'px'
     }

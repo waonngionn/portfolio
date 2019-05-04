@@ -36,7 +36,7 @@
  * keyframes
  */
  @keyframes opening_open_btn{
-    0%{ z-index: -1; }
-    99%{ z-index: -1; }
+    0%{ z-index: -10; }
+    99%{ z-index: -10; }
     100%{ z-index: 1; }
 }

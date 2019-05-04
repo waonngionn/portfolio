@@ -2,10 +2,6 @@
 
 $margin-top-sp: 50px;
 
-// body{
-//     background-image: url('https://waonngionn.github.io/portfolio/static/aboutbackground.JPG');
-//     background-size: contain;
-// }
 html,
 body,
 #app{height: 100%;}
@@ -16,10 +12,19 @@ body,
 }
 
 #about{
-    background-image: url('https://waonngionn.github.io/portfolio/static/aboutbackground.JPG');
-    background-size: contain;
     width: 100%; height: 100%;
     @include sp { height: 1250px; }
+    &:before{
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        display: inline-block;
+        content: '';
+        background-image: url('https://waonngionn.github.io/portfolio/static/aboutbackground.JPG');
+        background-size: contain;
+        filter: blur(3px);
+        z-index: -1000;
+    }
     #box_about{
         position: relative;
         margin: auto;
