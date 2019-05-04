@@ -20,7 +20,6 @@ export default {
     let btneasteregg = document.getElementById('btn_easter_egg')
 
     btnopentextbox.addEventListener('click', function () {
-      console.log('clicked')
       // textbox 出現
       boxeastereggtextbox.style.opacity = 1
       boxeastereggtextbox.style.zIndex = 10
@@ -32,7 +31,7 @@ export default {
       if (textboxeasteregg.value === '○△□') {
         alert('クソガキども、世界を変えろ！')
       } else {
-        alert('違うよ！ヒント（リチプア）')
+        alert('違うよ！')
       }
     })
   }
